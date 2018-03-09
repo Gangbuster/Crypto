@@ -16,9 +16,6 @@ def encrypt(text, rot):
         elif text[i] not in alpha and text[i] not in alpha_upper:
             n = n - 1
             final_encrypt = final_encrypt + text[i]
-        #elif text[i - 1] == " ":
-            #rotated_list = alphabet_position(rot[(i - 1) % m])
-            #final_encrypt = final_encrypt + rotate_character(text[i], rotated_list)
         else:
             rotated_list = alphabet_position(rot[(i % m) + n])
             final_encrypt = final_encrypt + rotate_character(text[i], rotated_list)
@@ -26,8 +23,6 @@ def encrypt(text, rot):
     return final_encrypt
 
 def main():
-    #message = input("Type a message:")
-    #rotate = input("Rotate by:")
     print(encrypt("The crow flies at midnight!", "boom"))
 
 if __name__ == "__main__":
