@@ -23,7 +23,7 @@ def encrypt(text, rot):
     return final_encrypt
 
 def main():
-    print(encrypt("The crow flies at midnight!", "boom"))
+    print(encrypt("The crow flies!", "boom"))
 
 if __name__ == "__main__":
     main()
